@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/brunocca/.xmonad'
+let g:netrw_dirhist_5='/home/brunocca/kernelbuild/linux-5.14.8/include/config'
+let g:netrw_dirhist_4='/home/brunocca/kernelbuild'
+let g:netrw_dirhist_3='/home/brunocca/.config/i3'
+let g:netrw_dirhist_2='/home/brunocca/.config/wal/colorschemes'
+let g:netrw_dirhist_1='/'
