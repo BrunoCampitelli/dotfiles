@@ -1,0 +1,17 @@
+import XMonad
+import XMonad.Util.EZConfig
+import XMonad.Util.Ungrab
+main::IO ()
+
+main = xmonad $ def
+	{ terminal    = "urxvt"
+	, modMask     = mod4Mask
+	, borderWidth = 3
+	}
+	`additionalKeysP`
+	[ ("M-d", spawn "rofi -show drun")
+	, ("<Print>", spawn "scrot -o 'lastScrot.png' -e 'xclip -selection clipboard -t image/png < $f'")
+	, ("C-<Print>", unGrab *> spawn "scrot -o 'lastScrot.png' -ue 'xclip -selection clipboard -t image/png < $f'")
+	, ("S-<Print>", unGrab *> spawn "scrot -o 'lastScrot.png' -se 'xclip -selection clipboard -t image/png < $f'")
+	]
+
