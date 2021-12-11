@@ -68,3 +68,4 @@ URxvt.iso14755: false
 *.boldItalicFont: xft:Inconsolata Nerd Font Mono:style=Bold Italic:size=12,xft:Noto Sans:size=12
 
 Xcursor.theme: breeze-hacked-cursor-theme
+URxvt.perl-ext-common: resize-font

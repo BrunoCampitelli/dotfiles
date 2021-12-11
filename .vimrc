@@ -59,3 +59,4 @@ set smartcase
 set linebreak
 
 autocmd filetype haskell nnoremap <F7> :w <bar> exec '!clear && ghc -v '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+autocmd filetype markdown nnoremap <F7> :w <bar> exec '!pandoc -s --template template.html -o '.shellescape('%:r').'.html '.shellescape('%')<CR>

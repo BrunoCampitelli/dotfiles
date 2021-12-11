@@ -69,7 +69,10 @@ picom &
 #update this with desired wallpaper before starting up. or comment out line
 ~/scripts/setbg.sh ~/bg/wallhaven-4x86j3_3840x1080.png
 #start pulseaudio
-pulseaudio -D
+#pulseaudio -D
+pipewire &
+pipewire-pulse &
+wireplumber &
 #remove if not using ortho split keeb
 setxkbmap us -variant colemak
 #log errrors to file
