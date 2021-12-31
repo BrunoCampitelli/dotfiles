@@ -60,19 +60,28 @@ fi
 #xrandr --output DisplayPort-1 --auto
 #xrandr --output HDMI-0 --off
 export QT_QPA_PLATFORMTHEME=qt5ct
-#for desktop monitor config
-#xrandr --output DP-2 --primary
-#xrandr --output VGA-1-1 --auto
-#xrandr --output VGA-1-1 --left-of DP-2
-#feh --bg-scale ~/bg/2291206.png
-#picom &
-#update this with desired wallpaper before starting up. or comment out line
-~/scripts/setbg.sh ~/bg/current.jpg
-#start pulseaudio
-#pulseaudio -D
-#pipewire &
-#pipewire-pulse &
-#wireplumber &
+
+#add diferent behaviors for different hosts here
+if [[ $HOSTNAME =~ "-80ga" ]]; then
+
+	~/scripts/setbg.sh ~/bg/current.jpg
+
+else
+
+	#for desktop monitor config
+	xrandr --output DP-2 --primary
+	xrandr --output VGA-1-1 --auto
+	xrandr --output VGA-1-1 --left-of DP-2
+	#feh --bg-scale ~/bg/2291206.png
+	picom &
+	#update this with desired wallpaper before starting up. or comment out line
+	~/scripts/setbg.sh ~/bg/wallhaven-4x86j3_3840x1080.png
+	#start pulseaudio
+	#pulseaudio -D
+	pipewire &
+	pipewire-pulse &
+	wireplumber &
+fi
 #remove if not using ortho split keeb
 setxkbmap us -variant colemak
 #log errrors to file

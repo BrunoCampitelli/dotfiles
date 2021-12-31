@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 !Using artix defaults here
+=======
+>>>>>>> 73ba857544c86c8cd3475de685df9d00d8055d58
 !! Colorscheme
 
 ! special
@@ -43,7 +46,11 @@
 !URxvt.boldFont: -*-rissole-*
 !URxvt.italicFont: -*-rissole-*
 !URxvt.boldItalicfont: -*-rissole-*
+<<<<<<< HEAD
 URxvt.letterSpace: 0
+=======
+!URxvt.letterSpace: 0
+>>>>>>> 73ba857544c86c8cd3475de685df9d00d8055d58
 !URxvt.lineSpace: 0
 !URxvt.geometry: 92x24
 URxvt.internalBorder: 24
@@ -63,16 +70,23 @@ URxvt.iso14755: false
 !*.boldItalicFont: xft:Iosevka:style=Bold Italic:size=8
 
 *faceName: monospace:pixelsize=44
+<<<<<<< HEAD
 *.font: xft:Inconsolata Nerd Font Mono:style=Regular:size=12,xft:Noto Sans Mono:size=12,xft:Symbola
+=======
+*.font: xft:Inconsolata Nerd Font Mono:style=Regular:size=12,xft:Noto Sans Mono:size=12
+>>>>>>> 73ba857544c86c8cd3475de685df9d00d8055d58
 *.boldFont: xft:Inconsolata Nerd Font Mono:style=Bold:size=12,xft:Noto Sans Mono:size=12
 *.italicFont: xft:Inconsolata Nerd Font Mono:style=Italic:size=12,xft:Noto Sans:size=12
 *.boldItalicFont: xft:Inconsolata Nerd Font Mono:style=Bold Italic:size=12,xft:Noto Sans:size=12
 
 Xcursor.theme: breeze-hacked-cursor-theme
 URxvt.perl-ext-common: resize-font
+<<<<<<< HEAD
 
 URxvt*transparent: true
 URxvt*shading: 40
 
 URxvt.keysym.Control-Left:    \033[1;5D
 URxvt.keysym.Control-Right:    \033[1;5C
+=======
+>>>>>>> 73ba857544c86c8cd3475de685df9d00d8055d58
